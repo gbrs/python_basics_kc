@@ -8,7 +8,7 @@ new_student = 'Василенко Анна'
 churn_student = 'Полякова Ольга'
 
 students.add(new_student)
-students.remove(churn_student)
+students.discard(churn_student)
 
 # students = {
 #     'Кравченко Виталий',
