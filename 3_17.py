@@ -1,20 +1,7 @@
-students = {
-    'Кравченко Виталий',
-    'Полякова Ольга',
-    'Некрасов Игорь',
-    'Дудочкин Илья',
-    'Захарова Мария'}
-new_student = 'Василенко Анна'
-churn_student = 'Полякова Ольга'
+a = [1, 6, 4, 3]
 
-students.add(new_student)
-students.discard(churn_student)
+sum_left = sum(a[:len(a) // 2])
+sum_right = sum(a[len(a) // 2:])
+result = sum_left == sum_right
 
-# students = {
-#     'Кравченко Виталий',
-#     'Некрасов Игорь',
-#     'Дудочкин Илья',
-#     'Захарова Мария',
-#     'Василенко Анна'}
-
-print(students)
+print(result)

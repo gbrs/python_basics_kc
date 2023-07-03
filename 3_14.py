@@ -1,7 +1,15 @@
-a = [1, 6, 4, 3]
+# my_set = {0, 10, 100}
+# to_delete = 0
+# ====>
+# my_set = {10, 100} # удалили 0
 
-sum_left = sum(a[:len(a) // 2])
-sum_right = sum(a[len(a) // 2:])
-result = sum_left == sum_right
+my_set = {0, 10, 100}
+to_delete = -2
+# ====>
+# my_set = {0, 10, 100} # ничего не сделали
 
-print(result)
+if to_delete in my_set:
+    my_set.remove(to_delete)
+
+print(my_set)
+

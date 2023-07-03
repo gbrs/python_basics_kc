@@ -1,6 +1,20 @@
-a = 1
-b = 3
+students = {
+    'Кравченко Виталий',
+    'Полякова Ольга',
+    'Некрасов Игорь',
+    'Дудочкин Илья',
+    'Захарова Мария'}
+new_student = 'Василенко Анна'
+churn_student = 'Полякова Ольга'
 
-result = sum(range(a, b + 1))
+students.add(new_student)
+students.discard(churn_student)
 
-print(result)
+# students = {
+#     'Кравченко Виталий',
+#     'Некрасов Игорь',
+#     'Дудочкин Илья',
+#     'Захарова Мария',
+#     'Василенко Анна'}
+
+print(students)

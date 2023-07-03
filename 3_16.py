@@ -1,14 +1,11 @@
-'''a = [1, 2, 2, 1, 3, 2, 3]
-b = 1
-# -> a = [2, 2, 3, 2, 3]'''
+# студенты курса "Аналитик данных"
+da_students = {'Ivanov Alexander', 'Loginov Vladislav', 'Ershova Anna', 'Korneva Daria'}
+# студенты курса "Визуализация данных"
+dv_students = {'Ershova Anna', 'Egunov Andrey', 'Ignatov Alexey', 'Loginov Vladislav'}
 
-a = [1, 2, 2, 1, 3, 2, 3]
-b = 2 
-# -> a = [1, 2, 1, 3, 3]
+# результат
+# students = {'Loginov Vladislav', 'Ershova Anna'}
 
-a.remove(b)
-a.reverse()
-a.remove(b)
-a.reverse()
+students = da_students & dv_students
 
-print(a)
+print(students)
