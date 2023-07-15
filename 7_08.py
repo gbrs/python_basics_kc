@@ -1,21 +1,11 @@
-# Пример 1
-m = [[1, 23, 4],
-     [3, 2, 1],
-     [6, 3, 4]]
-result = False
+lst_1 = ["1", "0", "0", "1"]
+lst_2 = ["0", "1", "1", "0"]
+result = True
 
-# Пример 2
-# m = [[1, 23, 4],
-#      [3, 2, 1],
-#      [1, 3, 4]]
-# result = True
+# lst_1 = ["1", "0", "0", "1"]
+# lst_2 = ["0", "1", "1", "1"]
+# result = False
 
-sm1 = sm2 = 0
-length = len(m)
-for i in range(length):
-    sm1 += m[i][i]
-    sm2 += m[i][length - i - 1]
-
-result = sm1 == sm2
+result = all([i != j for i, j in zip(lst_1, lst_2)])
 
 print(result)
